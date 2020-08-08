@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#303F9F"
+            android:gravity="center|end">
+            <Spinner
+                android:id="@+id/spinKec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/unica_one"
+                    android:id="@+id/informasi"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#2d2d2d"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvjmlpanti"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/meera_inimai"
+                        android:textColor="#2d2d2d"
+                        android:text="Jumlah Panti"
+                        android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvtotal"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/meera_inimai"
+                    android:textColor="#2d2d2d"
+                    android:text="Jumlah Total"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvjmllaki"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/meera_inimai"
+                    android:textColor="#2d2d2d"
+                    android:text="Jumlah Anak Laki-laki"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvjmlperempuan"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/meera_inimai"
+                    android:textColor="#2d2d2d"
+                    android:text="Jumlah Anak Perempuan"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <FrameLayout
+            android:id="@+id/details"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+</RelativeLayout>

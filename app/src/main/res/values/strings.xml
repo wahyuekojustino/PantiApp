@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">JompoApp</string>
+    <string name="title_activity_monitoring">Sinkronisasi Data</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_coba">Coba</string>
+    <string name="ok">OK</string>
+    <string name="gedung_sate">Gedung State</string>
+    <string name="text_content">Bocah rupawan itu dianggap membawa kemujuran bagi Tuan Moor. Karier perwira VOC ini melesat sejak si bocah tinggal di rumahnya. Pangkatnya yang semula kapten naik menjadi mayor. Bahkan, ia juga diangkat sebagai anggota Dewan Hindia (Raad van Indie) alias dewan penasihat Gubernur Jenderal. Kekayaannya pun meningkat pesat. Dari situlah, Moor sering memanggil lelaki kecil itu dengan nama Untung.</string>
+    <string name="alamat_gedung_sate">Alamat</string>
+    <string name="text_content_alamat">Kota Bandar Lampung</string>
+    <string name="failedLocation">Lokasi tidak ditemukan</string>
+    <string name="successLocation">Lokasi ditemukan</string>
+    <string name="searchLocation">Cari Lokasi</string>
+    <string name="title_activity_menu">JompoApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Panti Jompo</string>
+    <string name="nav_header_subtitle">Kota Bandar Lampung</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_tes">tes</string>
+</resources>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.pantiasuhan.pantiasuhan">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_menu_jompo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_menu_jompo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".donatur.LoginActivity" />
+        <activity
+            android:name=".donatur.Daftar_Donatur"
+            android:label="Daftar Donatur">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".donatur.MenuDonasi" />
+        </activity>
+        <activity android:name=".donatur.Menu_Awal_donatur" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.android.pantiasuhan.pantiasuhan"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SugengRawuh"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaPanti">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.DetailDataPanti"
+            android:label="Detail Data Panti">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.DetailDataPantiAll"
+            android:label="Detail Data Panti">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.MenuAdmin"
+            android:label="Menu Data">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaAnak">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.DetailDataAnak"
+            android:label="Detail Data Anak Asuh">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaAnak" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaPengurus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.DetailDataPengurus"
+            android:label="Detail Data Pengurus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPengurus" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaDonatur">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.DetailDataDonatur"
+            android:label="Detail Data Donatur">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaDonatur" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaKebutuhan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.TampilDetailKebutuhan"
+            android:label="Detail Data Kebutuhan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaKebutuhan" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaKegiatan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPanti" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.TampilDetailKegiatan"
+            android:label="Detail Data Kegiatan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaKegiatan" />
+        </activity>
+        <activity android:name=".Pengunjung.TampilSemuaPantiJumlah">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
+        </activity>
+        <activity android:name=".Pengunjung.MapsActivity" />
+        <activity android:name=".Pengunjung.AllMapsActivity" />
+        <activity android:name=".Pengunjung.TampilPanti" />
+        <activity
+            android:name=".Pengunjung.MenuAdminJumlah"
+            android:label="Menu Data">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPantiJumlah" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.JumlahDataPengurus"
+            android:label="Jumlah Data Pengurus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPantiJumlah" />
+        </activity>
+        <activity
+            android:name=".Pengunjung.JumlahDataAnak"
+            android:label="Jumlah Data Anak">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pengunjung.TampilSemuaPantiJumlah" />
+        </activity>
+        <activity
+            android:name=".tes"
+            android:label="@string/title_activity_tes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Pengunjung.TampilBantuan"
+            android:label="Bantuan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Pengunjung.DetailActivity" />
+
+        <activity android:name=".donatur.DonasiActivity"
+            android:label="Tambah Donasi">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".donatur.Menu_Awal_donatur" />
+        </activity>
+        <activity android:name=".donatur.MenuDonasi"
+            android:label="Menu Donasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".donatur.Menu_Awal_donatur" />
+        </activity>
+
+        <activity android:name=".donatur.DetailDataDonatur"
+            android:label="Detail Data Donatur">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".donatur.MenuDonasi" />
+        </activity>
+        <activity android:name=".donatur.TampilSemuaDonasi"
+            android:label="Daftar Donasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".donatur.MenuDonasi" />
+        </activity>
+        <activity android:name=".donatur.DetailDonasi"
+            android:label="Detail Data Donasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".donatur.TampilSemuaDonasi" />
+        </activity>
+        <activity android:name=".dijkstra.MainActivity"
+            android:label="Maps Djikstra">
+        </activity>
+    </application>
+
+</manifest>
